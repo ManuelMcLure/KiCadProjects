@@ -1,0 +1,539 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MyLibrary
+LIBS:PowerSupply2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Talema_70060K T1
+U 1 1 5938BC28
+P 1800 1950
+F 0 "T1" H 1800 2450 50  0000 C CNN
+F 1 "Talema_70060K" H 1800 1450 50  0000 C CNN
+F 2 "Talema_70060K" H 1800 2150 50  0000 C CNN
+F 3 "" H 1800 2150 50  0000 C CNN
+	1    1800 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 5938C3B8
+P 3100 1650
+F 0 "C1" H 3125 1750 50  0000 L CNN
+F 1 "27000uF 25V" H 3125 1550 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D35.0mm_P10.00mm_SnapIn" H 3100 1650 50  0001 C CNN
+F 3 "" H 3100 1650 50  0000 C CNN
+	1    3100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J1
+U 1 1 5938DEC1
+P 750 1950
+F 0 "J1" H 750 2200 50  0000 C TNN
+F 1 "AC_In" V 600 1950 50  0000 C TNN
+F 2 "MyLibrary:TerminalBlock_Dinkle_EK500_2Pole" H 750 1725 50  0001 C CNN
+F 3 "" H 725 1950 50  0001 C CNN
+	1    750  1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 593C2FBB
+P 4500 1150
+F 0 "R1" V 4580 1150 50  0000 C CNN
+F 1 "121" V 4500 1150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4430 1150 50  0001 C CNN
+F 3 "" H 4500 1150 50  0000 C CNN
+	1    4500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT_TRIM RV1
+U 1 1 593C30DB
+P 3850 2250
+F 0 "RV1" V 3675 2250 50  0000 C CNN
+F 1 "500" V 3750 2250 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3296Y" H 3850 2250 50  0001 C CNN
+F 3 "" H 3850 2250 50  0000 C CNN
+	1    3850 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT_TRIM RV2
+U 1 1 593C3104
+P 4450 2250
+F 0 "RV2" V 4275 2250 50  0000 C CNN
+F 1 "500" V 4350 2250 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3296Y" H 4450 2250 50  0001 C CNN
+F 3 "" H 4450 2250 50  0000 C CNN
+	1    4450 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 593C34FA
+P 4100 2200
+F 0 "C2" H 4125 2300 50  0000 L CNN
+F 1 "10uF" H 4125 2100 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4100 2200 50  0001 C CNN
+F 3 "" H 4100 2200 50  0000 C CNN
+	1    4100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C3
+U 1 1 593C35FF
+P 4700 2200
+F 0 "C3" H 4725 2300 50  0000 L CNN
+F 1 "10uF" H 4725 2100 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4700 2200 50  0001 C CNN
+F 3 "" H 4700 2200 50  0000 C CNN
+	1    4700 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P1
+U 1 1 593C4487
+P 3500 1200
+F 0 "P1" H 3500 1300 50  0000 C CNN
+F 1 "DispPwr" V 3600 1200 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_1mmDrill" H 3500 1200 50  0001 C CNN
+F 3 "" H 3500 1200 50  0000 C CNN
+	1    3500 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L CP1 C4
+U 1 1 593C47CF
+P 5500 1600
+F 0 "C4" H 5525 1700 50  0000 L CNN
+F 1 "150uF" H 5525 1500 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 5500 1600 50  0001 C CNN
+F 3 "" H 5500 1600 50  0000 C CNN
+	1    5500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D5
+U 1 1 593C52C7
+P 3950 650
+F 0 "D5" H 3950 750 50  0000 C CNN
+F 1 "1N4001" H 3950 550 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3950 650 50  0001 C CNN
+F 3 "" H 3950 650 50  0000 C CNN
+	1    3950 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J2
+U 1 1 593C5C44
+P 6700 1650
+F 0 "J2" H 6700 1900 50  0000 C TNN
+F 1 "VOut" V 6550 1650 50  0000 C TNN
+F 2 "MyLibrary:TerminalBlock_Dinkle_EK500_2Pole" H 6700 1425 50  0001 C CNN
+F 3 "" H 6675 1650 50  0001 C CNN
+	1    6700 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 593C8BA1
+P 5750 2150
+F 0 "P3" H 5750 2250 50  0000 C CNN
+F 1 "Curr-" V 5850 2150 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 5750 2150 50  0001 C CNN
+F 3 "" H 5750 2150 50  0000 C CNN
+	1    5750 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 593C8C10
+P 6050 2150
+F 0 "P4" H 6050 2250 50  0000 C CNN
+F 1 "Curr+" V 6150 2150 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 6050 2150 50  0001 C CNN
+F 3 "" H 6050 2150 50  0000 C CNN
+	1    6050 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 593DA4FD
+P 3300 1450
+F 0 "R2" V 3380 1450 50  0000 C CNN
+F 1 "150" V 3300 1450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3230 1450 50  0001 C CNN
+F 3 "" H 3300 1450 50  0000 C CNN
+	1    3300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 593DA5ED
+P 3300 2000
+F 0 "R3" V 3380 2000 50  0000 C CNN
+F 1 "1K" V 3300 2000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3230 2000 50  0001 C CNN
+F 3 "" H 3300 2000 50  0000 C CNN
+	1    3300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P5
+U 1 1 593DA71E
+P 3650 1900
+F 0 "P5" H 3650 2050 50  0000 C CNN
+F 1 "PWR_LED" V 3750 1900 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 3650 1900 50  0001 C CNN
+F 3 "" H 3650 1900 50  0000 C CNN
+	1    3650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D2
+U 1 1 5945E7A2
+P 2700 1600
+F 0 "D2" H 2700 1700 50  0000 C CNN
+F 1 "RK46" H 2700 1500 50  0000 C CNN
+F 2 "MyLibrary:RK46" H 2700 1600 50  0001 C CNN
+F 3 "" H 2700 1600 50  0000 C CNN
+	1    2700 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky D3
+U 1 1 5945E805
+P 2700 1850
+F 0 "D3" H 2700 1950 50  0000 C CNN
+F 1 "RK46" H 2700 1750 50  0000 C CNN
+F 2 "MyLibrary:RK46" H 2700 1850 50  0001 C CNN
+F 3 "" H 2700 1850 50  0000 C CNN
+	1    2700 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky D4
+U 1 1 5945E86A
+P 2700 2100
+F 0 "D4" H 2700 2200 50  0000 C CNN
+F 1 "RK46" H 2700 2000 50  0000 C CNN
+F 2 "MyLibrary:RK46" H 2700 2100 50  0001 C CNN
+F 3 "" H 2700 2100 50  0000 C CNN
+	1    2700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D1
+U 1 1 5945EA2F
+P 2700 1300
+F 0 "D1" H 2700 1400 50  0000 C CNN
+F 1 "RK46" H 2700 1200 50  0000 C CNN
+F 2 "MyLibrary:RK46" H 2700 1300 50  0001 C CNN
+F 3 "" H 2700 1300 50  0000 C CNN
+	1    2700 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P6
+U 1 1 594614F4
+P 5850 1200
+F 0 "P6" H 5850 1300 50  0000 C CNN
+F 1 "VSense" V 5950 1200 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_1mmDrill" H 5850 1200 50  0001 C CNN
+F 3 "" H 5850 1200 50  0000 C CNN
+	1    5850 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X04 P2
+U 1 1 59461FCC
+P 4200 1600
+F 0 "P2" H 4200 1850 50  0000 C CNN
+F 1 "VSelect" V 4300 1600 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-04_04x2.54mm_Straight" H 4200 1600 50  0001 C CNN
+F 3 "" H 4200 1600 50  0000 C CNN
+	1    4200 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2050 2200 2050
+Wire Wire Line
+	2300 1550 2300 2050
+Wire Wire Line
+	2300 1550 2200 1550
+Connection ~ 2300 1600
+Wire Wire Line
+	2200 1850 2550 1850
+Wire Wire Line
+	2350 2350 2200 2350
+Wire Wire Line
+	2900 2350 5750 2350
+Wire Wire Line
+	2950 1000 3500 1000
+Wire Wire Line
+	3100 1800 3100 2350
+Wire Wire Line
+	950  1550 1400 1550
+Wire Wire Line
+	1300 1550 1300 2050
+Wire Wire Line
+	1300 2050 1400 2050
+Wire Wire Line
+	1400 1850 1250 1850
+Wire Wire Line
+	1250 1850 1250 2350
+Wire Wire Line
+	950  2350 1400 2350
+Connection ~ 1300 1550
+Connection ~ 1250 2350
+Wire Wire Line
+	950  1850 950  1550
+Wire Wire Line
+	950  2350 950  2050
+Wire Wire Line
+	3900 1300 4500 1300
+Wire Wire Line
+	4000 2250 4000 2350
+Connection ~ 4000 2350
+Wire Wire Line
+	3100 1000 3100 1500
+Wire Wire Line
+	4600 2250 4600 2350
+Connection ~ 4600 2350
+Wire Wire Line
+	3700 2050 4100 2050
+Wire Wire Line
+	3850 1550 3850 2100
+Wire Wire Line
+	4450 1950 4450 2100
+Wire Wire Line
+	4300 2050 4700 2050
+Connection ~ 4000 1300
+Connection ~ 3850 2050
+Wire Wire Line
+	3900 1950 4450 1950
+Connection ~ 4450 2050
+Wire Wire Line
+	4300 1000 6500 1000
+Wire Wire Line
+	5500 1000 5500 1450
+Wire Wire Line
+	5500 2350 5500 1750
+Connection ~ 5500 2350
+Wire Wire Line
+	6500 1000 6500 1550
+Connection ~ 5500 1000
+Wire Wire Line
+	3500 1000 3500 650 
+Wire Wire Line
+	3500 650  3800 650 
+Wire Wire Line
+	4100 650  4300 650 
+Wire Wire Line
+	4300 650  4300 1000
+Wire Wire Line
+	6500 2350 6500 1750
+Connection ~ 4500 1000
+Connection ~ 4100 2350
+Connection ~ 4700 2350
+Wire Wire Line
+	3700 2250 3700 2050
+Wire Wire Line
+	4300 2250 4300 2050
+Wire Wire Line
+	6050 2350 6500 2350
+Connection ~ 3100 1000
+Connection ~ 3100 2350
+Connection ~ 3500 1000
+Wire Wire Line
+	3300 1000 3300 1300
+Connection ~ 3300 1000
+Wire Wire Line
+	3300 1600 3300 1850
+Wire Wire Line
+	3300 2150 3300 2350
+Connection ~ 3300 2350
+Wire Wire Line
+	3300 1850 3450 1850
+Wire Wire Line
+	3450 1950 3450 2150
+Wire Wire Line
+	3450 2150 3300 2150
+Wire Wire Line
+	2300 1600 2550 1600
+Wire Wire Line
+	2450 1600 2450 1300
+Wire Wire Line
+	2450 1300 2550 1300
+Connection ~ 2450 1600
+Wire Wire Line
+	2350 1850 2350 2350
+Connection ~ 2350 1850
+Wire Wire Line
+	2350 2100 2550 2100
+Connection ~ 2350 2100
+Wire Wire Line
+	2850 1850 2850 1600
+Wire Wire Line
+	2850 1600 2950 1600
+Wire Wire Line
+	2950 1600 2950 1000
+Wire Wire Line
+	2850 1300 2900 1300
+Wire Wire Line
+	2900 1300 2900 2350
+Connection ~ 2900 2350
+Wire Wire Line
+	2850 2100 2900 2100
+Connection ~ 2900 2100
+Wire Wire Line
+	4000 1300 4000 1450
+Wire Wire Line
+	3850 1550 4000 1550
+Wire Wire Line
+	3900 1950 3900 1650
+Wire Wire Line
+	3900 1650 4000 1650
+$Comp
+L CONN_01X02 P7
+U 1 1 594627B2
+P 5350 2150
+F 0 "P7" H 5350 2300 50  0000 C CNN
+F 1 "VVar" V 5450 2150 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 5350 2150 50  0001 C CNN
+F 3 "" H 5350 2150 50  0000 C CNN
+	1    5350 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1750 4000 1850
+Wire Wire Line
+	4000 1850 5150 1850
+Wire Wire Line
+	5150 1850 5150 2100
+$Comp
+L CP1 C5
+U 1 1 59462AD5
+P 5000 2200
+F 0 "C5" H 5025 2300 50  0000 L CNN
+F 1 "10uF" H 5025 2100 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5000 2200 50  0001 C CNN
+F 3 "" H 5000 2200 50  0000 C CNN
+	1    5000 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 2350
+Wire Wire Line
+	5150 2200 5150 2350
+Wire Wire Line
+	5000 2050 5150 2050
+Connection ~ 5150 2050
+$Comp
+L CONN_01X01 P8
+U 1 1 594CB097
+P 3700 1000
+F 0 "P8" H 3700 1100 50  0000 C CNN
+F 1 "VRegIn" V 3800 1000 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 3700 1000 50  0001 C CNN
+F 3 "" H 3700 1000 50  0000 C CNN
+	1    3700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P10
+U 1 1 594CB129
+P 4100 1000
+F 0 "P10" H 4100 1100 50  0000 C CNN
+F 1 "VRegOut" V 4200 1000 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 4100 1000 50  0001 C CNN
+F 3 "" H 4100 1000 50  0000 C CNN
+	1    4100 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P9
+U 1 1 594CB1C8
+P 3700 1300
+F 0 "P9" H 3700 1400 50  0000 C CNN
+F 1 "VRegAdj" V 3800 1300 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_1mmDrill" H 3700 1300 50  0001 C CNN
+F 3 "" H 3700 1300 50  0000 C CNN
+	1    3700 1300
+	-1   0    0    1   
+$EndComp
+Text Label 1150 1550 0    60   ~ 0
+ACLive
+Text Label 1150 2350 0    60   ~ 0
+ACNeutral
+Text Label 2400 1600 0    60   ~ 0
+AC7V_1
+Text Label 2400 1850 0    60   ~ 0
+AC7V_2
+Text Label 3000 1000 0    60   ~ 0
+Unreg+
+Text Label 3050 2350 0    60   ~ 0
+Gnd
+Text Label 5150 1000 0    60   ~ 0
+Reg+
+Connection ~ 5850 1000
+Connection ~ 5000 2350
+$Comp
+L D_Schottky D6
+U 1 1 5953238C
+P 6300 1650
+F 0 "D6" H 6300 1750 50  0000 C CNN
+F 1 "RK46" H 6300 1550 50  0000 C CNN
+F 2 "MyLibrary:RK46" H 6300 1650 50  0001 C CNN
+F 3 "" H 6300 1650 50  0000 C CNN
+	1    6300 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 1500 6300 1000
+Connection ~ 6300 1000
+Wire Wire Line
+	6300 1800 6300 2350
+Connection ~ 6300 2350
+$EndSCHEMATC

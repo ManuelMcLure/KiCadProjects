@@ -1,0 +1,179 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5F6D41B9
+P 2400 2900
+F 0 "#PWR?" H 2400 2650 50  0001 C CNN
+F 1 "GNDREF" H 2405 2727 50  0000 C CNN
+F 2 "" H 2400 2900 50  0001 C CNN
+F 3 "" H 2400 2900 50  0001 C CNN
+	1    2400 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 2450 0    50   Input ~ 0
+PS_ON_CPU
+Text GLabel 3400 1950 2    50   Input ~ 0
+PS_ON_PSU
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5F6D773B
+P 2100 2450
+F 0 "Q1" H 2290 2496 50  0000 L CNN
+F 1 "2N3904" H 2290 2405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2300 2375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2100 2450 50  0001 L CNN
+	1    2100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F6DADFF
+P 1550 2450
+F 0 "R1" V 1343 2450 50  0000 C CNN
+F 1 "2.2K" V 1434 2450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1480 2450 50  0001 C CNN
+F 3 "~" H 1550 2450 50  0001 C CNN
+	1    1550 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F6DD221
+P 2200 1900
+F 0 "D1" V 2239 1782 50  0000 R CNN
+F 1 "LED" V 2148 1782 50  0000 R CNN
+F 2 "" H 2200 1900 50  0001 C CNN
+F 3 "~" H 2200 1900 50  0001 C CNN
+	1    2200 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F6DEABC
+P 2200 1500
+F 0 "R2" H 2270 1546 50  0000 L CNN
+F 1 "470" H 2270 1455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2130 1500 50  0001 C CNN
+F 3 "~" H 2200 1500 50  0001 C CNN
+	1    2200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F6E0DE8
+P 3150 2400
+F 0 "SW1" V 3104 2548 50  0000 L CNN
+F 1 "SW_Push" V 3195 2548 50  0000 L CNN
+F 2 "" H 3150 2600 50  0001 C CNN
+F 3 "~" H 3150 2600 50  0001 C CNN
+	1    3150 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1200 2450 1300 2450
+Wire Wire Line
+	1700 2450 1900 2450
+Wire Wire Line
+	2200 1750 2200 1650
+Wire Wire Line
+	3150 2200 3150 1950
+Wire Wire Line
+	3150 1950 3400 1950
+$Comp
+L power:+12V #PWR?
+U 1 1 5F6D38F8
+P 2200 1200
+F 0 "#PWR?" H 2200 1050 50  0001 C CNN
+F 1 "+12V" H 2215 1373 50  0000 C CNN
+F 2 "" H 2200 1200 50  0001 C CNN
+F 3 "" H 2200 1200 50  0001 C CNN
+	1    2200 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1200 2200 1350
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 5FAA03BE
+P 2600 2150
+F 0 "Q2" H 2790 2196 50  0000 L CNN
+F 1 "2N3904" H 2790 2105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2800 2075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2600 2150 50  0001 L CNN
+	1    2600 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 1950
+$Comp
+L Device:R R3
+U 1 1 5FAA4131
+P 1550 2150
+F 0 "R3" V 1343 2150 50  0000 C CNN
+F 1 "10K" V 1434 2150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1480 2150 50  0001 C CNN
+F 3 "~" H 1550 2150 50  0001 C CNN
+	1    1550 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 2450 1300 2150
+Wire Wire Line
+	1300 2150 1400 2150
+Connection ~ 1300 2450
+Wire Wire Line
+	1300 2450 1400 2450
+Wire Wire Line
+	2700 1950 3150 1950
+Wire Wire Line
+	1700 2150 2400 2150
+$Comp
+L Device:R R4
+U 1 1 5FACABAD
+P 1550 2750
+F 0 "R4" V 1343 2750 50  0000 C CNN
+F 1 "100K" V 1434 2750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1480 2750 50  0001 C CNN
+F 3 "~" H 1550 2750 50  0001 C CNN
+	1    1550 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 2450 1300 2750
+Wire Wire Line
+	1300 2750 1400 2750
+Wire Wire Line
+	1700 2750 2200 2750
+Wire Wire Line
+	3150 2600 3150 2750
+Wire Wire Line
+	2700 2350 2700 2750
+Connection ~ 2700 2750
+Wire Wire Line
+	2700 2750 3150 2750
+Wire Wire Line
+	2200 2650 2200 2750
+Connection ~ 2200 2750
+Wire Wire Line
+	2200 2750 2400 2750
+Wire Wire Line
+	2400 2900 2400 2750
+Connection ~ 2400 2750
+Wire Wire Line
+	2400 2750 2700 2750
+Wire Wire Line
+	2200 2050 2200 2250
+$EndSCHEMATC
