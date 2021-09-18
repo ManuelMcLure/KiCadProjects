@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Printer Expansion"
-Date ""
-Rev ""
+Date "2021-09-18"
+Rev "1.0"
 Comp "mclure.org"
 Comment1 ""
 Comment2 ""
