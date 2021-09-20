@@ -42,17 +42,6 @@ F 3 "" H 4650 1150 50  0001 C CNN
 $EndComp
 Connection ~ 3650 3150
 $Comp
-L PrinterExpansion-rescue:YAAJ_DCDC_StepDown_LM2596-LM2596_Module U2
-U 1 1 6141F718
-P 1300 1050
-F 0 "U2" H 1300 1415 50  0000 C CNN
-F 1 "LM2596_Mod" H 1300 1324 50  0000 C CNN
-F 2 "MyLibrary:YAAJ_DCDC_StepDown_LM2596" V 1250 1050 50  0001 C CNN
-F 3 "" H 1250 1050 50  0001 C CNN
-	1    1300 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 614206E4
 P 3300 1150
@@ -100,17 +89,6 @@ Wire Wire Line
 Wire Wire Line
 	1200 1350 1400 1350
 Connection ~ 1400 1350
-$Comp
-L Connector:Screw_Terminal_01x02 J6
-U 1 1 61438032
-P 1050 3250
-F 0 "J6" H 1130 3242 50  0000 L CNN
-F 1 "12V In" H 1130 3151 50  0000 L CNN
-F 2 "MyLibrary:TerminalBlock_Dinkle_EK500_2Pole" H 1050 3250 50  0001 C CNN
-F 3 "~" H 1050 3250 50  0001 C CNN
-	1    1050 3250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+12V #PWR0109
 U 1 1 61439B80
@@ -942,4 +920,26 @@ $EndComp
 Connection ~ 2000 2050
 Wire Wire Line
 	2000 2050 2300 2050
+$Comp
+L MyLibrary:YAAJ_DCDC_StepDown_LM2596 U2
+U 1 1 61491470
+P 1300 1050
+F 0 "U2" H 1300 1415 50  0000 C CNN
+F 1 "LM2596_Module" H 1300 1324 50  0000 C CNN
+F 2 "MyLibrary:YAAJ_DCDC_StepDown_LM2596" H 1250 1050 50  0001 C CNN
+F 3 "" H 1250 1050 50  0001 C CNN
+	1    1300 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 61438032
+P 1050 3250
+F 0 "J6" H 1130 3242 50  0000 L CNN
+F 1 "12V In" H 1130 3151 50  0000 L CNN
+F 2 "MyLibrary:TerminalBlock_Dinkle_EK500_2Pole" H 1050 3250 50  0001 C CNN
+F 3 "~" H 1050 3250 50  0001 C CNN
+	1    1050 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
