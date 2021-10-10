@@ -797,7 +797,7 @@ L Connector_Generic:Conn_02x04_Odd_Even J10
 U 1 1 617DA39C
 P 2150 4500
 F 0 "J10" V 2154 4680 50  0000 L CNN
-F 1 "Conn_02x04_Odd_Even" V 2245 4680 50  0000 L CNN
+F 1 "3.3VPower" V 2245 4680 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 2150 4500 50  0001 C CNN
 F 3 "~" H 2150 4500 50  0001 C CNN
 	1    2150 4500
