@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SJ1-3525N)(type Legacy)(uri Z:/Git/KiCadProjects/Libraries/SJ1-3525N.lib)(options "")(descr ""))
+  (lib (name MJ-3536N)(type Legacy)(uri Z:/Git/KiCadProjects/Libraries/MJ-3536N.lib)(options "")(descr ""))
+)
