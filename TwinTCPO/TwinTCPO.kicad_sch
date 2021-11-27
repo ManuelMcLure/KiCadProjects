@@ -2263,7 +2263,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006174f21a)
     (property "Reference" "R2" (id 0) (at 27.94 86.1822 90))
-    (property "Value" "33K" (id 1) (at 27.94 88.4936 90))
+    (property "Value" "47K" (id 1) (at 27.94 88.4936 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (id 2) (at 27.94 89.662 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2278,7 +2278,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006174fe32)
     (property "Reference" "R3" (id 0) (at 43.18 86.1822 90))
-    (property "Value" "33K" (id 1) (at 43.18 88.4936 90))
+    (property "Value" "47K" (id 1) (at 43.18 88.4936 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (id 2) (at 43.18 89.662 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3127,10 +3127,10 @@
       (reference "R1") (unit 1) (value "10") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00006174f21a"
-      (reference "R2") (unit 1) (value "33K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+      (reference "R2") (unit 1) (value "47K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00006174fe32"
-      (reference "R3") (unit 1) (value "33K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+      (reference "R3") (unit 1) (value "47K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-000061757d40"
       (reference "R4") (unit 1) (value "100K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
